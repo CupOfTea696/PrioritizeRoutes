@@ -31,7 +31,7 @@ class Router extends IlluminateRouter
      *
      * @const string
      */
-    const VERSION = '0.0.0';
+    const VERSION = '1.0.0';
     
     /**
      * Original Router.
