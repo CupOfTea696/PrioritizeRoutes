@@ -1,8 +1,6 @@
 <?php
-
 namespace CupOfTea\PrioritizeRoutes;
 
-use Illuminate\Http\Request;
 use CupOfTea\Package\Package;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Container\Container;
@@ -36,34 +34,34 @@ class Router extends IlluminateRouter
     
     /**
      * Original Router.
-     * 
+     *
      * @var \Illuminate\Routing\Router
      */
     protected $illuminateRouter;
     
     /**
-	 * Create a new Router instance.
-	 *
-	 * @param  Dispatcher  $events
-	 * @param  Container  $container
-	 * @return void
-	 */
-	public function __construct(Dispatcher $events, Container $container = null, IlluminateRouter $illuminateRouter = null)
-	{
-		parent::__construct($events, $container);
+     * Create a new Router instance.
+     *
+     * @param  Dispatcher  $events
+     * @param  Container  $container
+     * @return void
+     */
+    public function __construct(Dispatcher $events, Container $container = null, IlluminateRouter $illuminateRouter = null)
+    {
+        parent::__construct($events, $container);
         
-		$this->routes = new RouteCollection;
+        $this->routes = new RouteCollection;
         $this->illuminateRouter = $illuminateRouter;
-	}
+    }
     
     /**
-	 * Create a new Route object.
-	 *
-	 * @param  array|string  $methods
-	 * @param  string  $uri
-	 * @param  mixed   $action
-	 * @return \CupOfTea\PrioritizeRoutes\Route
-	 */
+     * Create a new Route object.
+     *
+     * @param  array|string  $methods
+     * @param  string  $uri
+     * @param  mixed   $action
+     * @return \CupOfTea\PrioritizeRoutes\Route
+     */
     protected function newRoute($methods, $uri, $action)
     {
         return with(new Route($methods, $uri, $action))->setContainer($this->container);

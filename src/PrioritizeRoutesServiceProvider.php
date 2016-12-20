@@ -1,5 +1,4 @@
 <?php
-
 namespace CupOfTea\PrioritizeRoutes;
 
 use Illuminate\Support\ServiceProvider;
@@ -30,7 +29,7 @@ class PrioritizeRoutesServiceProvider extends ServiceProvider
         );
         
         $this->app['kernel.router'] = $this->app['router'];
-        $this->app['router'] = $this->app->share(function($app) {
+        $this->app['router'] = $this->app->share(function ($app) {
             $this->app['kernel.router']->setRoutes(($router = new Router($app['events'], $app, $app['kernel.router']))->getRoutes());
             
             return $router;
