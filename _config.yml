@@ -32,11 +32,10 @@ gems:
   - nokogiri
   - octopress-minify-html
 assets:
-  dirname: assets
-  base_url: assets/
-  cachebust: soft
-  js_compressor: uglifier
-  css_compressor: sass
-  gzip: [ text/css, application/javascript ]
+  compress:
+    css: true
+    js: true
+  digest: true
+  prefix: assets/
   sources:
     - _assets
