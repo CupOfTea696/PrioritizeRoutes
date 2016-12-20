@@ -1,4 +1,1 @@
-# Dependencies
-/vendor/
-composer.phar
-composer.lock
+.sass-cache
