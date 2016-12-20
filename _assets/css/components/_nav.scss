@@ -7,9 +7,9 @@
     padding: 0 6rem;
     font-size: 1.1rem;
     color: #FFF;
-    background-color: rgba(mix(#B93888, #893680), .8);
-    background-image: linear-gradient(120deg, rgba(#B93888, .8), rgba(#893680, .8));
-    border-bottom: 1px solid rgba(#BC72A8, .9);
+    background-color: rgba(mix(lighten($lightAccentColor, 5%), lighten($darkAccentColor, 5%)), .8);
+    background-image: linear-gradient(120deg, rgba(lighten($lightAccentColor, 5%), .8), rgba(lighten($darkAccentColor, 5%), .8));
+    border-bottom: 1px solid rgba(mix(lighten($lightAccentColor, 15%), lighten($darkAccentColor, 15%)), .9);
     z-index: 99;
     
     + .main-content{
