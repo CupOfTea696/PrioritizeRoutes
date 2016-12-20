@@ -5,19 +5,19 @@
 <span class="nx">Route</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">'{catch?}'</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$catch</span><span class="p">)</span> <span class="p">{</span>
     <span class="k">return</span> <span class="s1">'Caught '</span> <span class="o">.</span> <span class="nv">$catch</span><span class="p">;</span>
 <span class="p">})</span><span class="o">-&gt;</span><span class="na">priority</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-</code></pre></div><p>You can also assign priority to Route Groups, like below.</p><div class="highlight"><pre><code class="language-text" data-lang="text">Route::group(['namespace' =&gt; 'Admin', 'priority' =&gt; 5], function () {
-    Route::get('admin', function () {
-        return 'Admin dashboard';
-    });
+</code></pre></div><p>You can also assign priority to Route Groups, like below.</p><div class="highlight"><pre><code class="language-php" data-lang="php"><span class="nx">Route</span><span class="o">::</span><span class="na">group</span><span class="p">([</span><span class="s1">'namespace'</span> <span class="o">=&gt;</span> <span class="s1">'Admin'</span><span class="p">,</span> <span class="s1">'priority'</span> <span class="o">=&gt;</span> <span class="mi">5</span><span class="p">],</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">Route</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">'admin'</span><span class="p">,</span> <span class="k">function</span> <span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s1">'Admin dashboard'</span><span class="p">;</span>
+    <span class="p">});</span>
 
-    Route::get('admin/users', function() {
-        return 'User management';
-    });
-});
+    <span class="nx">Route</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">'admin/users'</span><span class="p">,</span> <span class="k">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s1">'User management'</span><span class="p">;</span>
+    <span class="p">});</span>
+<span class="p">});</span>
 
-Route::get('{catch?}', function ($catch) {
-    return 'Caught ' . $catch;
-})-&gt;priority(0);
+<span class="nx">Route</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">'{catch?}'</span><span class="p">,</span> <span class="k">function</span> <span class="p">(</span><span class="nv">$catch</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="s1">'Caught '</span> <span class="o">.</span> <span class="nv">$catch</span><span class="p">;</span>
+<span class="p">})</span><span class="o">-&gt;</span><span class="na">priority</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
 </code></pre></div><h2 id="configuration">Configuration</h2><p>By default, the priority of any route where you didn't explicitly assigned a priority will be set to <code>0</code>. You can change this by publishing the vendor assets for this package and editing the configuration file.</p><p>To publish the vendor assets, run the command below.</p><div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>php artisan vendor:publish --provider<span class="o">=</span><span class="s1">'CupOfTea\PrioritizeRoutes\PrioritizeRoutesServiceProvider'</span>
 </code></pre></div><p>Now the configuration file is available in <code>config/routing.php</code>. Simply change the <code>priority</code> key to your preferred default route priority.</p><div class="highlight"><pre><code class="language-php" data-lang="php"><span class="o">&lt;?</span><span class="nx">php</span>
 
