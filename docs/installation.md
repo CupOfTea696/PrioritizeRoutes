@@ -12,7 +12,7 @@ To install PrioritizeRoutes, you will first need to install [Composer][composer]
 You can install PrioritizeRoutes by simply requiring the package with [Composer][composer] inside your projects root. To do so, run the following command:
 
 ```bash
-$ composer require cupoftea/prioritize-routes ~1.0
+$ composer require cupoftea/prioritize-routes ~1.1
 ```
 
 ### Setting up PrioritizeRoutes
