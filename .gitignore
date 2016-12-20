@@ -1,0 +1,4 @@
+# Dependencies
+/vendor/
+composer.phar
+composer.lock
