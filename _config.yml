@@ -1,58 +1,23 @@
 # Site settings
 
 project:
-    name: "TwoStream"
-    alt_name: "TwoStream"
+    name: "PrioritizeRoutes"
+    alt_name: "PrioritizeRoutes"
     tagline: The WebSocket server for Laravel
     author: "CupOfTea696"
-    github: "https://github.com/CupOfTea696/TwoStream/"
-    package: "cupoftea/twostream"
+    github: "https://github.com/CupOfTea696/PrioritizeRoutes/"
+    package: "cupoftea/prioritize-routes"
 navigation:
   - name: Documentation
     url: "docs"
     navigation:
-      - name: Getting Started
-        type: category
       - name: Installation
         type: page
         url: "installation"
-      - name: Configuration
+      - name: Usage
         type: page
-        url: "configuration"
-      - name: Running TwoStream
-        type: page
-        url: "server"
-      - name: The Basics
-        type: category
-      - name: Routing
-        type: page
-        url: "routing"
-      - name: Controllers
-        type: page
-        url: "controllers"
-      - name: Requests
-        type: page
-        url: "requests"
-      - name: Responses
-        type: page
-        url: "responses"
-      - name: Services
-        type: category
-      - name: Error Handling
-        type: page
-        url: "exceptions"
-      - name: Events
-        type: page
-        url: "events"
-      - name: TwoStream
-        type: page
-        url: "twostream"
-      - name: WsSession
-        type: page
-        url: "ws-session"
-  - name: API
-    url: "docs/api"
-url: "http://twostream.cupoftea.io"
+        url: "usage"
+url: "http://prioritize-routes.cupoftea.io"
 twitter_username: CupOfTea696
 github_username:  CupOfTea696
 
