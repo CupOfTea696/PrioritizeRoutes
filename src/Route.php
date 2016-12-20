@@ -9,7 +9,7 @@ class Route extends IlluminateRoute
 {
     /**
      * The Route's priority.
-     * 
+     *
      * @var int
      */
     protected $priority;
@@ -17,7 +17,7 @@ class Route extends IlluminateRoute
     /**
      * Set the Route's priority.
      * @param  int  $priority
-     * 
+     *
      * @return CupOfTea\PrioritizeRoutes\Route
      * @throws \InvalidArgumentException
      */
@@ -34,7 +34,7 @@ class Route extends IlluminateRoute
     
     /**
      * Get the Route's priority.
-     * 
+     *
      * @return int
      */
     public function getPriority()
