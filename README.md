@@ -10,4 +10,4 @@
 
 PrioritizeRoutes is a Laravel 5.1 and up package that allows you to assign priority to routes.
 
-Prioritizing routes can be very usefull when you want to ensure a catchall route is always matched last, allowing other routes that also match this catchall route to match first. More info in the [Documentation](http://prioritize-routes.cupoftea.io/docs/).
+Prioritizing routes can be very useful when you want to ensure a catchall route is always matched last, allowing other routes that also match this catchall route to match first. More info in the [Documentation](http://prioritize-routes.cupoftea.io/docs/).
