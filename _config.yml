@@ -3,7 +3,7 @@
 project:
     name: "PrioritizeRoutes"
     alt_name: "PrioritizeRoutes"
-    tagline: The WebSocket server for Laravel
+    tagline: Prioritize your routes in Laravel 5
     author: "CupOfTea696"
     github: "https://github.com/CupOfTea696/PrioritizeRoutes/"
     package: "cupoftea/prioritize-routes"
@@ -25,8 +25,7 @@ github_username:  CupOfTea696
 markdown: redcarpet
 redcarpet:
   extensions: ['no_intra_emphasis', 'with_toc_data', 'html_toc', 'strikethrough', 'autolink', 'tables', 'footnotes', 'underline']
-highlighter: pygments
-pygments_options: ['startinline']
+highlighter: rouge
 gems:
   - jekyll-assets
   - nokogiri
