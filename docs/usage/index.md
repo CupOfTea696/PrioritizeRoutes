@@ -21,7 +21,7 @@ Route::get('{catch?}', function ($catch) {
 
 You can also assign priority to Route Groups, like below.
 
-```
+```php
 Route::group(['namespace' => 'Admin', 'priority' => 5], function () {
     Route::get('admin', function () {
         return 'Admin dashboard';
