@@ -9,7 +9,7 @@
     
     @include part(item){
         @include font-size(14px);
-        color: #AA076B;
+        color: $lightAccentColor;
         
         a{
             color: inherit;
