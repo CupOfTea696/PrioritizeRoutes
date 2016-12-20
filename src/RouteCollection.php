@@ -1,5 +1,4 @@
 <?php
-
 namespace CupOfTea\PrioritizeRoutes;
 
 use Illuminate\Routing\Route;
@@ -9,7 +8,7 @@ class RouteCollection extends IlluminateRouteCollection
 {
     /**
      * Wether the routes have been sorted.
-     * 
+     *
      * @var bool
      */
     protected $sorted = false;
@@ -66,7 +65,7 @@ class RouteCollection extends IlluminateRouteCollection
     
     /**
      * Compares the priority of two routes for sorting.
-     * 
+     *
      * @param  \Illuminate\Routing\Route  $route1
      * @param  \Illuminate\Routing\Route  $route2
      * @return int
@@ -85,7 +84,7 @@ class RouteCollection extends IlluminateRouteCollection
     
     /**
      * Sort the routes by their Priority.
-     * 
+     *
      * @return \CupOfTea\PrioritizeRoutes\RouteCollection
      */
     public function sort()
