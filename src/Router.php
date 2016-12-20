@@ -69,6 +69,23 @@ class Router extends IlluminateRouter
     }
     
     /**
+     * Merge the group stack with the controller action.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @return void
+     */
+    protected function mergeGroupAttributesIntoRoute($route)
+    {
+        parent::mergeGroupAttributesIntoRoute($route);
+        
+        $group = end($this->groupStack);
+        
+        if (isset($group['priority'])) {
+            $route->priority($group['priority']);
+        }
+    }
+    
+    /**
      * Gather the middleware for the given route.
      *
      * @param  \Illuminate\Routing\Route  $route

@@ -24,7 +24,7 @@ class Route extends IlluminateRoute
     public function priority($priority)
     {
         if (! is_numeric($priority)) {
-            throw new InvalidArgumentException('The $priority parameter must be numeric.');
+            throw new InvalidArgumentException('The $priority parameter must be numeric or NULL.');
         }
         
         $this->priority = $priority;
