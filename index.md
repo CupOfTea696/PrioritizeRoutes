@@ -3,10 +3,10 @@ layout: default
 ---
 
 <!-- header start -->
-[![Latest Stable Version](https://poser.pugx.org/cupoftea/twostream/version.svg)](https://packagist.org/packages/cupoftea/twostream)
-[![Total Downloads](https://poser.pugx.org/cupoftea/twostream/d/total.svg)](https://packagist.org/packages/cupoftea/twostream) [![Latest Unstable Version](https://poser.pugx.org/cupoftea/twostream/v/unstable.svg)](https://packagist.org/packages/cupoftea/twostream)
+[![Latest Stable Version](https://poser.pugx.org/cupoftea/prioritize-routes/version.svg)](https://packagist.org/packages/cupoftea/prioritize-routes)
+[![Total Downloads](https://poser.pugx.org/cupoftea/prioritize-routes/d/total.svg)](https://packagist.org/packages/cupoftea/prioritize-routes) [![Latest Unstable Version](https://poser.pugx.org/cupoftea/prioritize-routes/v/unstable.svg)](https://packagist.org/packages/cupoftea/prioritize-routes)
 [![StyleCI](https://styleci.io/repos/33411116/shield?style=flat)](https://styleci.io/repos/33411116)
-[![License](https://poser.pugx.org/cupoftea/twostream/license.svg)](https://packagist.org/packages/cupoftea/twostream)
+[![License](https://poser.pugx.org/cupoftea/prioritize-routes/license.svg)](https://packagist.org/packages/cupoftea/prioritize-routes)
 
 # PrioritizeRoutes
 ## Prioritize your routes in Laravel 5.
